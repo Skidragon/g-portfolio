@@ -63,11 +63,11 @@ class Form extends React.Component {
     return (
       <FormWrapper name = "contact" method = "POST" action="contact-success" netlify>
         <FieldGroup>
-          <Label for="subject">Subject</Label>
+          <Label htmlFor="subject">Subject</Label>
           <TextBox id="subject" placeholder="Add Subject" />
         </FieldGroup>
         <FieldGroup>
-          <Label for="content">Content</Label>
+          <Label htmlFor="content">Content</Label>
           <ContentArea id="content"placeholder="Add Content"></ContentArea>
         </FieldGroup>
         <div data-netlify-recaptcha></div>

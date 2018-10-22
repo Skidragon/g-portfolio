@@ -61,7 +61,7 @@ class Form extends React.Component {
   };
   render() {
     return (
-      <FormWrapper name = "contact" method = "POST" action="contact-success" netlify>
+      <FormWrapper name = "contact" method = "POST">
         <FieldGroup>
           <Label htmlFor="subject">Subject</Label>
           <TextBox id="subject" placeholder="Add Subject" />
@@ -70,7 +70,6 @@ class Form extends React.Component {
           <Label htmlFor="content">Content</Label>
           <ContentArea id="content"placeholder="Add Content"></ContentArea>
         </FieldGroup>
-        <div data-netlify-recaptcha></div>
         <SubmitBtn>Submit</SubmitBtn>
       </FormWrapper>
     );
